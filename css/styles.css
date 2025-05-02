@@ -1,0 +1,171 @@
+:root{
+	--background-color: #FAFAFA;/*#F5F5F5;/*#F0F0F0 ;/* #E5E5E5;*/
+	--font-color: #222222;/*#333333 ;/*or #444444 ;*/
+	--font-hover-color:#666666;/* #666666 ; /*or #AAAAAA;*/
+	--sub-font-color: #333333;
+}
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 18px;
+}
+body{
+	background-color: var(--background-color);
+	font-family: "Inclusive Sans", sans-serif;
+	color:var(--font-color);
+	padding: 0 25px;
+}
+.header{
+	position: sticky;
+	top: 0;
+	padding: 15px 0;
+	background-color: var(--background-color);
+	z-index: 100;
+}
+.header .brand h2{
+	display: inline-block;
+	margin-top: 2px;
+	font-size: .8rem;
+	color: var(--background-color);
+	background-color: var(--font-color);
+	font-weight: 500;
+	padding: 3px;
+}
+.nav-bar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav-bar ul{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	row-gap: 20px;
+	column-gap: 10px;
+	margin: 10px 0;
+}
+.nav-link{
+	display: inline-block;
+	padding: 10px;
+	font-weight: 500;
+/*	border: 1px solid red;*/
+}
+.brand a,
+.nav-link,
+.social-link{
+	text-decoration: none;
+	color: var(--font-color);
+/*	border: 1px solid red;*/
+}
+.nav-link:active{
+	color: #000000;	
+	font-weight: 	bold;
+}
+main{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  	column-gap: 1rem;
+}
+#photo{
+	display: block;
+	width: 150px;
+	border-radius: 50%;
+	filter: grayscale(100%);
+	margin: 0 auto	15px;
+}
+#contact h3{
+	margin: 10px auto -10px;
+	text-align: 	center	;
+/*	border: 1px solid	red;*/
+}
+#contact{
+	grid-column: 1/2;
+/*	border: 1px solid red;*/
+}
+#sections{
+	grid-column: 2/6;
+/*	border: 1px solid red;*/
+}
+.social-icons{
+	display: flex;
+	flex-direction: column;
+}
+.social-link{
+	padding: 10px;
+	font-weight: 500;
+}
+.nav-link:hover,
+.social-link:hover{
+	transform: scale(1.15) ;
+	color: #000000;
+	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Adds smooth effect */
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#contact,
+#sections{
+	padding: 30px 0;
+/*	border: 1px solid	 green;*/
+}
+#contact section,
+#sections section{
+	margin: 	10px 0 20px;
+	scroll-margin-top: 100px; 
+/*	border: 1px solid	 violet;*/
+}
+.sub-section{
+	margin: 15px 10px;
+/*	border: 1px solid	blue;*/
+}
+
+.section-details{
+	display: 	flex;
+	justify-content: 	space-between;
+	column-gap: 1rem;
+	margin-top: 5px;
+	margin-left: 	10px;
+}
+.section-details span{
+	color: var(--sub-font-color);
+	font-weight: 	500;
+	font-style: 	italic	;
+}
+.exp-details{
+	margin: 	10px 0 0 10px;
+}
+.project-list{
+	margin-left: 	10px;
+}
+footer{
+	height: 100px;
+	padding-top: 	30px;
+/*	border: 1px	 solid	 red;*/
+}
+@media screen and (max-width: 768px){
+	main{
+		display: flex;
+		flex-direction: column;
+	}
+	#contact{
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	.social-icons{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+	#sections section{
+	scroll-margin-top: 150px; 
+/*	border: 1px solid	 red;*/
+}
+}
