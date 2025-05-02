@@ -14,7 +14,6 @@
 ---
 
 ## Contact
-![photo](./images/1717139474507.jpg)
 
 ### Social Links
 - [LinkedIn](https://www.linkedin.com/school/free-code-camp/)
