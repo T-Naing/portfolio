@@ -4,11 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Thit T. Naing's Portfolio</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@300..700&display=swap" as="style">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@300..700&display=swap">
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+	<link rel="preload" href="css/styles.css" as="style">
 	<link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -16,10 +17,17 @@
 	<header class="header">
 		<nav class="nav-bar">
 			<div class="brand">
-				<a href="#"><h1>Thit T. Naing</h1></a>
-				<h2>Data Analyst Portfolio</h2>
+				<a href="index.html"><h2 class="brand-name">Thit T. Naing</h2></a>
+				<h1 class="brand-type">Data Analyst Portfolio</h1>
 			</div>
-			<ul>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
+        	<label for="menu-toggle" class="hamburger">
+	            <span></span>
+	            <span></span>
+	            <span></span>
+        	</label>
+         <div class="nav-links-container">
+            <ul class="nav-links">
 				<li>
 					<a href="#about" class="nav-link">About</a>
 				</li>
@@ -40,19 +48,18 @@
 				</li>
 			</ul>			
 		</nav>
-		<hr>
 	</header>
-	
+	<hr id="sepapator">	
 	<main>		
 		<div id="contact">
 			<section>	
-			<img id="photo" src="./images/1717139474507.jpg" alt="photo">
+			<img id="photo" src="./images/profile_pic.jpg" alt="photo" loading="lazy">
 			<h3>Contact</h3>
 			<div class="social-icons sub-section">
-				<a href="https://www.linkedin.com/school/free-code-camp/" class="social-link">
+				<!-- <a href="https://www.linkedin.com/school/free-code-camp/" class="social-link">
 					<i class="fab fa-linkedin-in"></i>
 					<span>LinkedIn</span>
-				</a>
+				</a> -->
 				<a href="https://github.com/T-Naing/portfolio/tree/main" class="social-link">
 					<i class="fab fa-github"></i>
 					<span>Github</span>
@@ -73,8 +80,7 @@
 			<h3 class="section-title">About</h3>
 			<div class="sub-section">
 			<p>
-				This is the portfolio of Thit T. Naing.
-				Here you will find a collection of my data analytics and data science projects, showcasing my skills and expertise in the field.
+				My name is Naing. Welcome to my portfolio. With a strong foundation in business, accounting, and software development, I bring a diverse skill set that drives insightful data analytics and strategic decision-making.
 			</p>
 		</div>
 		</section>
@@ -84,14 +90,18 @@
 			<div class="sub-section">
 				<h4 class="sub-section-title">B. C. Tech (Bachelor of Computer Technology)</h4>
 				<div class="section-details">				
-					<span>University of Computer Studies, Mandalay, Myanmar</span>
+					<span>
+						<a href="https://www.ucsm.edu.mm/" target="_blank">University of Computer Studies</a>, Mandalay, Myanmar
+					</span>
 					<span>Dec 2002 – Sept 2005</span>				
 				</div>
 			</div>
 			<div class="sub-section">
 				<h4>International Advanced Diploma in Computer Studies</h4>
 				<div class="section-details">				
-					<span>NCC Education, KMD Yangon, Myanmar</span>
+					<span>
+						<a href="https://www.nccedu.com/" target="_blank">NCC Education</a>, KMD Yangon, Myanmar
+					</span>
 					<span>Dec 2006 – Dec 2007</span>				
 				</div>
 			</div>
@@ -136,7 +146,7 @@
 				<h4>Microsoft Corporation</h4>
 				<div class="section-details">				
 					<span>MCTS (Microsoft Certified Technology Specialist), C#.Net & ASP.Net</span>
-					<span>Sep 2017</span>				
+					<span>Sep 2007</span>				
 				</div>
 			</div>			
 		</section>
@@ -195,7 +205,7 @@
 				</div>
 			</div>
 			<div class="sub-section">
-				<h4>Data Assistant</h4>
+				<h4>Self-Employed</h4>
 				<div class="section-details">				
 					<span>Cherry Pharmaceutical Retails, Taunggyi  </span>
 					<span>Jun 2011 – Jun 2017 </span>				
