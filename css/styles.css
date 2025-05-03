@@ -123,14 +123,16 @@ main{
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   	column-gap: 1rem;
 }
-#photo{
-	display: block;
-	max-width: 150px;
-	width: 80%;
-	height: auto;
-	border-radius: 50%;
-	filter: grayscale(100%);
-	margin: 0 auto 15px;
+#photo {
+  display: block;
+  width: 150px;          /* Explicit width for LCP stability */
+  height: 150px;         /* Explicit height for CLS prevention */
+  max-width: 100%;       /* Responsive safeguard */
+  border-radius: 50%;
+  filter: grayscale(100%);
+  margin: 0 auto 15px;
+  object-fit: cover;     /* Ensures proper cropping */
+  aspect-ratio: 1/1;     /* Modern way to maintain proportions */
 }
 #contact h3{
 	margin: 10px auto -10px;

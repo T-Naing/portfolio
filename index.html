@@ -4,13 +4,22 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Thit T. Naing's Portfolio</title>
-	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@300..700&display=swap" as="style">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@300..700&display=swap">
 
-	<link rel="stylesheet" href="css/all.min.css">
-
-	<link rel="preload" href="css/styles.css" as="style" onload="this.rel='stylesheet'">
-	<link rel="stylesheet" href="css/styles.css?v=2">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Preload the font CSS with proper caching -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@300..700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:wght@300..700&display=swap"></noscript>
+  
+  <!-- Preload Font Awesome with proper caching -->
+  <link rel="preload" href="css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/all.min.css"></noscript>
+  
+  <!-- Main styles with versioned URL for cache busting -->
+  <link rel="preload" href="css/styles.css?v=2" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/styles.css?v=2"></noscript>
+  
 
 </head>
 <body>
@@ -53,7 +62,16 @@
 	<main>		
 		<div id="contact">
 			<section>	
-			<img id="photo" src="./images/profile_pic.webp" alt="photo" loading="lazy" width="150px" height="150px">
+			<img id="photo" 
+				src="./images/profile_pic_150x150.webp"
+				srcset="
+				./images/profile_pic_150x150.webp 1x,
+				./images/profile_pic_300x300.webp 2x"
+				alt="Profile Photo"
+				loading="eager"
+				width="150"
+				height="150"
+				decoding="async">
 			<h3>Contact</h3>
 			<div class="social-icons sub-section">
 				<!-- <a href="https://www.linkedin.com/school/free-code-camp/" class="social-link">
