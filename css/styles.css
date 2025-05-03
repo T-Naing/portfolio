@@ -4,6 +4,10 @@
 	--font-hover-color:#AAAAAa;/*#666666;/* #666666 ; /*or #AAAAAA;*/
 	--sub-font-color: #333333;
 }
+@font-face {
+  font-family: 'Inclusive Sans';
+  font-display: swap;
+}
 *,
 *::before,
 *::after{
@@ -35,6 +39,11 @@ body{
 	background-color: var(--font-color);
 	font-weight: 500;
 	padding: 3px;
+}
+.brand-name{
+/*	display: inline-block;*/
+font-size: 1.8rem;
+font-weight: bold;
 }
 .nav-bar{
 	display: flex;
