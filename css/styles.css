@@ -34,10 +34,11 @@ body{
 .brand {
     display: flex;
     flex-direction: column-reverse; /* This swaps the order visually */
-    text-align: left; /* Centers both elements */
+    text-align: center; /* Centers both elements */
+
 }
-.header .brand .brand-type{
-	display: inline-block;
+.header .brand .brand-type{ /*data analyst*/
+	display: inline;
 	margin-top: 2px;
 	font-size: .8rem;
 	color: var(--background-color);
@@ -45,11 +46,11 @@ body{
 	font-weight: 500;
 	padding: 3px;
 }
-.brand-name{
-/*	display: inline-block;*/
+/*.brand-name{ 
+	display: inline-block;
 font-size: 1.8rem;
 font-weight: bold;
-}
+}*/
 .nav-bar{
 	display: flex;
 	justify-content: space-between;
