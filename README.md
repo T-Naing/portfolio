@@ -1,4 +1,5 @@
 # Welcome to My Portfolio
+Visit my live portfolio site for a visual overview: [t-naing.github.io/portfolio](https://t-naing.github.io/portfolio/)
 ## Navigation
 
 - [Data Analysis Projects](#data-analysis-projects)
