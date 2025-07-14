@@ -13,7 +13,8 @@
 # Thit Thit Naing
 
 - Mobile: +95 9970526183  
-- GitHub Portfolio: [https://github.com/T-Naing/portfolio](https://github.com/T-Naing/portfolio)  
+- GitHub Portfolio: [https://github.com/T-Naing/portfolio](https://github.com/T-Naing/portfolio)
+- Portfolio Website: [t-naing.github.io/portfolio](https://t-naing.github.io/portfolio/)
 - Email: [thitt.naing@gmail.com](mailto:thitt.naing@gmail.com)
 - LinkedIn: [linkedin.com/in/thit-thit-naing](https://www.linkedin.com/in/thit-thit-naing)  
 - freeCodeCamp: [freecodecamp.org/Naing](https://www.freecodecamp.org/Naing)
