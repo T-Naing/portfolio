@@ -128,6 +128,15 @@ main{
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   	column-gap: 1rem;
 }
+.lead-para {
+  font-size: 1.1rem;
+  font-weight: 500;
+  /*color: #333;*/
+  margin-bottom: 1rem;
+}
+.trail-para {
+  margin-bottom: 1rem;
+}
 #photo {
   display: block;
   width: 150px;          /* Explicit width for LCP stability */
@@ -165,6 +174,8 @@ main{
 	transform: scale(1.15) ;
 	color: #000000;
 	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Adds smooth effect */
+}
+.nav-link:hover{
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -172,6 +183,13 @@ main{
 #sections{
 	padding: 30px 0;
 /*	border: 1px solid	 green;*/
+}
+.section-title{
+	font-size: 1.5rem;
+  /*font-weight: 500;*/
+  /*color: #333;*/
+  /*margin-bottom: 1rem;*/
+
 }
 #contact section,
 #sections section{
@@ -277,4 +295,127 @@ footer{
 	#sections{
 		padding-top: 0;
 }
+}
+/*------------end-----------*/
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem 10px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.project-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--sub-font-color);/*#333;*/
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--font-color);/*#555;*/
+
+}
+
+.tech-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-list li {
+  background-color: #e5e5e5;
+  color: #222;
+  font-size: 0.875rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: background-color 0.3s ease;
+}
+
+.tech-list li:hover {
+  background-color: #cfcfcf;
+}
+
+/* Project Links Container */
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Link Styles */
+#projects a,
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--font-color);
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+#projects a:hover,
+.project-links a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Binder Badge Image */
+.project-links a img {
+  /*height: 28px;*/
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.project-links a:hover img {
+  transform: scale(1.05);
+}
+
+/* GitHub Link Specific Style */
+.project-links a:first-child {
+  margin-right: 1rem;
+}
+
+/* Binder Link Specific Style */
+.project-links a:last-child {
+  padding: 0.25rem 0.75rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .project-links {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
+  
+  .project-links a:first-child {
+    margin-right: 0;
+  }
 }
