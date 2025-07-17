@@ -310,6 +310,11 @@ footer{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 1.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* or set a fixed height */
+
 }
 
 .project-card:hover {
@@ -337,6 +342,8 @@ footer{
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+  /*flex-grow: 1; /* fills available vertical space */*/
+
 }
 
 .tech-list li {
@@ -351,6 +358,7 @@ footer{
 
 .tech-list li:hover {
   background-color: #cfcfcf;
+
 }
 
 /* Project Links Container */
@@ -361,6 +369,14 @@ footer{
   margin-top: 1.5rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  
+  margin-top: auto; /* pushes to bottom */
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 /* Link Styles */
