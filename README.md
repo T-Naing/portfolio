@@ -17,7 +17,7 @@ Visit my live portfolio site for a visual overview: [t-naing.github.io/portfolio
 - GitHub Portfolio: [https://github.com/T-Naing/portfolio](https://github.com/T-Naing/portfolio)
 - Portfolio Website: [t-naing.github.io/portfolio](https://t-naing.github.io/portfolio/)
 - Email: [thitt.naing@gmail.com](mailto:thitt.naing@gmail.com)
-- LinkedIn: [linkedin.com/in/thit-thit-naing](https://www.linkedin.com/in/thit-thit-naing)  
+- LinkedIn: [linkedin.com/in/t-naing](https://www.linkedin.com/in/t-naing)  
 - freeCodeCamp: [freecodecamp.org/Naing](https://www.freecodecamp.org/Naing)
 
 ---
